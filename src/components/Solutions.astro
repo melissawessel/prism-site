@@ -1,0 +1,62 @@
+---
+import { Picture } from "astro:assets";
+import starImage4 from "assets/star-4.png";
+import starImage8 from "assets/star-8.png";
+import starRoundImage from "assets/round-flower.png";
+---
+
+<section id="solutions" class="py-20 text-[#232E42]">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Solutions</h2>
+    
+    <div class="flex flex-col gap-10">
+      <div class="flex items-center gap-6">
+        <Picture
+            src={starImage4}
+            alt="Astronaut in the air"
+            widths={[200, 400, 600]}
+            sizes="(max-width: 600px) 100vw, 620px"
+            loading="eager"
+            format="avif"
+            id="acos"
+          />
+        <div class="ml-10">
+          <h3 class="text-xl font-semibold">For ACOs & Value-Based Care</h3>
+          <p>Optimize shared savings, reduce avoidable utilization, and improve patient risk stratification.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-6">
+        <div class="mr-10">
+          <h3 class="text-xl font-semibold">For Health Plans & Payers</h3>
+          <p>Identify cost reduction levers, improve provider performance monitoring, and optimize contract structuring.</p>
+        </div>
+        <Picture
+            src={starImage8}
+            alt="Astronaut in the air"
+            widths={[200, 400, 600]}
+            sizes="(max-width: 600px) 100vw, 620px"
+            loading="eager"
+            format="avif"
+            id="plans"
+          />
+      </div>
+      
+      <div class="flex items-center gap-6">
+        <Picture
+            src={starRoundImage}
+            alt="Astronaut in the air"
+            widths={[200, 400, 600]}
+            sizes="(max-width: 600px) 100vw, 620px"
+            loading="eager"
+            format="avif"
+            id="providers"
+          />
+        <div class="ml-10">
+          <h3 class="text-xl font-semibold">For Healthcare Providers</h3>
+          <p>Reduce preventable hospitalizations, enhance patient care coordination, and identify gaps in care.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
