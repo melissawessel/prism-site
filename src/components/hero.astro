@@ -1,16 +1,16 @@
 ---
 import { Picture } from "astro:assets";
-import prismImage from "assets/prism.png";
+import prismImage from "assets/square-triangle-prism.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24 bg-[#F2F1F6] text-[#232E42]">
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={prismImage}
-      alt="Astronaut in the air"
+      alt="Prism"
       widths={[200, 400, 600]}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
